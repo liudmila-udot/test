@@ -11,6 +11,7 @@ public class Test {
         input[1] = "Ivan";
         input[2] = "Mary";
         System.out.println(findMax(3,"1 2 3 1 # # 1"));
+        System.out.println(fib(10));
     }
 
     static long findMax(int n, String tree) {
@@ -39,5 +40,16 @@ public class Test {
         }
         return (long) list.get(2);
 
+    }
+
+    static int fib (int n) {
+        int fib = 0;
+        int a = 1;
+        for(int i=0; i<n; i++) {
+            System.out.println(fib);
+            fib = fib + a;
+            a = fib;
+        }
+        return fib;
     }
 }
